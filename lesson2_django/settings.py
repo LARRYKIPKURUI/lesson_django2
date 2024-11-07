@@ -119,6 +119,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = BASE_DIR / 'static'   #Main directory - created automatically
+STATIC_DIRS = [BASE_DIR / 'main_app2/static']  #Each app in the project
+
+# python manage.py collectstatic = command for running after adding static files to your project
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
